@@ -76,7 +76,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   showText: false,
                   scrollable: true,
                   startDate: DateTime(today.year, 1, 1),
-                  endDate: DateTime(today.year, today.month + 1, 31),
+                  endDate: today,
                   colorsets: {
                     1: Colors.green,
                   },
