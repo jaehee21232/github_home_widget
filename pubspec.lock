@@ -9,6 +9,30 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.2"
+  app_widget:
+    dependency: "direct main"
+    description:
+      name: app_widget
+      sha256: "8d91ce99b5e68ce45a41d1acd219254fd8682ccb9a7f4a85269dbcc20dd13763"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.2.2"
+  app_widget_android:
+    dependency: transitive
+    description:
+      name: app_widget_android
+      sha256: "4fd18bd0e29113bc58d4ad7e7a5a06bd7b7b7d0baeafe23046654a409b3619be"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.2.1"
+  app_widget_platform_interface:
+    dependency: transitive
+    description:
+      name: app_widget_platform_interface
+      sha256: "75583ff13e5b01f7204397990e7d885a7c3d261f68c570b09c58581fd30518d7"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.2.0"
   async:
     dependency: transitive
     description:
@@ -155,6 +179,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.8.3"
+  plugin_platform_interface:
+    dependency: transitive
+    description:
+      name: plugin_platform_interface
+      sha256: "6a2128648c854906c53fa8e33986fc0247a1116122f9534dd20e3ab9e16a32bc"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.1.4"
   sky_engine:
     dependency: transitive
     description: flutter
