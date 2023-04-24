@@ -65,8 +65,8 @@ class GithubCommit {
 }
 
 class Commit {
-  Author? author;
-  Author? committer;
+  Commit_Author? author;
+  Commit_Author? committer;
   String? message;
   Tree? tree;
   String? url;
@@ -83,10 +83,11 @@ class Commit {
       this.verification});
 
   Commit.fromJson(Map<String, dynamic> json) {
-    author =
-        json['author'] != null ? new Author.fromJson(json['author']) : null;
+    author = json['author'] != null
+        ? new Commit_Author.fromJson(json['author'])
+        : null;
     committer = json['committer'] != null
-        ? new Author.fromJson(json['committer'])
+        ? new Commit_Author.fromJson(json['committer'])
         : null;
     message = json['message'];
     tree = json['tree'] != null ? new Tree.fromJson(json['tree']) : null;
@@ -162,8 +163,8 @@ class Tree {
 class Verification {
   bool? verified;
   String? reason;
-  Null? signature;
-  Null? payload;
+  String? signature;
+  String? payload;
 
   Verification({this.verified, this.reason, this.signature, this.payload});
 
